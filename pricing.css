@@ -434,7 +434,8 @@ footer{
         width: 45px;
         height: 45px;
         border-radius: 1000px;
-        background: #0328EE;      
+        background: #0328EE;  
+        cursor: pointer;    
     }   
     .menu-items{
         display: none;

@@ -7,7 +7,7 @@ body{
     background-color: #010725;
     color: #ffffff;
     margin: 0;
-    width: 100vw;
+    width: 100%;
     overflow-x: hidden;
     font-family: 'DM Sans', sans-serif; 
 }
@@ -16,13 +16,14 @@ header{
     height: 132px;
     justify-content: center;
     align-items: center;
+    /* width: 100vw; */
     color: #ffffff;
     font-family: 'DM Sans', sans-serif; 
-    padding: 33px 100px 33px 100px;
+    padding: 3vh 5vw 3vh 5vw;
 }
 .header-container{
     display: flex;
-    width: 100vw;
+    width: 100%;
     height: 66px; 
     justify-content: space-between;
 }
@@ -45,7 +46,7 @@ header{
 .nav-nav{
     display: flex; 
     height: 66px;
-    gap: 32px;
+    gap: 1.5vw;
 }
 .nav-navigation-div{
     display: flex;  
@@ -56,7 +57,7 @@ header{
     display: flex;
     height: 30px;
     padding: 7px 1px 7px 1px;
-    gap: 20px;
+    gap: 1.5vw;
     list-style: none;
 
 }
@@ -114,7 +115,7 @@ header{
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 0 100px 0 100px;
+    padding: 0 5vw;
     gap: 48px;
 }
 .hero1-header-div{
@@ -164,7 +165,7 @@ p{
 .hero1-blog-img{
     object-fit: contain;
 }
-.hero1-container .mobile-hero1-blog{
+.mobile-hero1-blog{
     display: none;
 }
 
@@ -177,7 +178,7 @@ p{
 }
 .inner-hero2{
     display: flex;
-    padding: 0 100px 0 100px;
+    padding: 0 5vw;
     align-items: center;
     height: 100%;
     justify-content: space-between;
@@ -224,6 +225,7 @@ form{
 }
 #submit{
     display: flex;
+    cursor: pointer;
     padding: 0px 26px;
     justify-content: center;
     align-items: center;
@@ -252,7 +254,7 @@ form{
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 0 100px 0 100px;
+    padding: 0 5vw;
     gap: 56px;
 }
 .hero3-header-div{
@@ -281,15 +283,17 @@ form{
 
 .entire-blogs{
     display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 26px;
+    /* flex-direction: column;
+    align-items: center; */
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
-.blog-post-div{
+/* .blog-post-div{
     display: flex;
     justify-content: space-between;
     width: 100%;
-}
+    flex-wrap: wrap;
+} */
 .blog-post{
     background-image: url(images/home-images/div.png);
     background-repeat: no-repeat no-repeat;
@@ -320,7 +324,7 @@ form{
     background-color: #010D50; 
     width: 382px;
     height: 590px;
-    border-radius: 40px;
+    border-radius: 40px;margin-bottom: 5vh;
 }
 .blog-post-product{
     display: flex;
@@ -392,8 +396,8 @@ footer{
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
 .logo-social-div{
     display: flex;
@@ -532,7 +536,7 @@ footer{
 
 
 
-@media (max-width: 428px){
+@media (max-width: 35rem){
     header{
         display: none;
     }   
@@ -553,7 +557,7 @@ footer{
         display: flex;
         flex-direction: row;
         width: 100%;
-        padding: 0 16px;
+        padding: 0 5vw;
         justify-content: space-between;
     }
     .hamburger{
@@ -563,7 +567,8 @@ footer{
         width: 45px;
         height: 45px;
         border-radius: 1000px;
-        background: #0328EE;      
+        background: #0328EE; 
+        cursor: pointer;     
     }   
     .menu-items{
         display: none;
@@ -571,7 +576,7 @@ footer{
         align-items: center;
         text-decoration: none;
         justify-content: center;
-        height: 100vh;  
+        height: 100vh; 
     }
     .menu-drop-div{
         display: flex;
@@ -621,9 +626,9 @@ footer{
     }
     .hero1-container{
         display: flex;
-        flex-direction: column;
+        flex-direction: column; 
         width: 100%;
-        padding: 0 16px 0 16px;
+        padding: 0 5vw;
         gap: 47px;
     }
     .hero1-header-div{
@@ -636,13 +641,24 @@ footer{
         width: 100%;
         gap: 16px;
     }
-    .hero1-container .mobile-hero1-blog{
+    /* .hero1-container .mobile-hero1-blog{
         display: flex;
+        width: 100%;
+        justify-content: center;
+    } */
+    .mobile-hero1-blog{
+        display: flex;
+        justify-content: center;
     }
     .hero1-blog{
         display: none;
     }
-
+    /* .hero1-container .mobile-hero1-blog .blog-post{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    } */
+    
     .hero2{
         height: 521px;
         background:  #0328EE;
@@ -651,7 +667,7 @@ footer{
     .inner-hero2{
         display: flex;
         flex-direction: column;
-        padding: 0 16px 0 16px;
+        padding: 0 5vw;
         align-items: center;
         height: 100%;
         gap: 20px;
@@ -713,6 +729,7 @@ footer{
     }
     #submit{
         display: flex;
+        cursor: pointer;
         width: 354px;
         padding: 27px 32px;
         justify-content: center;
@@ -739,7 +756,7 @@ footer{
         display: flex;
         flex-direction: column;
         width: 100%;
-        padding: 0 16px 0 16px;
+        padding: 0 5vw;
         gap: 24px;
     }
     .hero3-header-div{
@@ -780,12 +797,12 @@ footer{
         align-items: center;
         gap: 16px;
     }
-    .blog-post-div{
+    /* .blog-post-div{
         display: flex;
         flex-direction: column;
         gap: 16px;
         width: 100%;
-    }
+    } */
     .blog-post{
         background-image: url(images/home-images/div.png);
         background-repeat: no-repeat no-repeat;
@@ -879,20 +896,12 @@ footer{
     
     }
 
-
-
-
-
-
-
-
-
     .footer-every{
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 100%;       
-        padding: 0 16px 0 16px;
+        padding: 0 5vw;
     }
     .logo-social-div{
         display: flex;
