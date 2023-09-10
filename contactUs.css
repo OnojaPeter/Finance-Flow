@@ -7,7 +7,7 @@ body{
     background-color: #010725;
     color: #ffffff;
     margin: 0;
-    width: 100vw;
+    width: 100%;
     overflow-x: hidden;
     font-family: 'DM Sans', sans-serif; 
 }
@@ -16,13 +16,14 @@ header{
     height: 132px;
     justify-content: center;
     align-items: center;
+    /* width: 100vw; */
     color: #ffffff;
     font-family: 'DM Sans', sans-serif; 
-    padding: 33px 100px 33px 100px;
+    padding: 3vh 5vw 3vh 5vw;
 }
 .header-container{
     display: flex;
-    width: 100vw;
+    width: 100%;
     height: 66px; 
     justify-content: space-between;
 }
@@ -45,7 +46,7 @@ header{
 .nav-nav{
     display: flex; 
     height: 66px;
-    gap: 32px;
+    gap: 1.5vw;
 }
 .nav-navigation-div{
     display: flex;  
@@ -56,7 +57,7 @@ header{
     display: flex;
     height: 30px;
     padding: 7px 1px 7px 1px;
-    gap: 20px;
+    gap: 1.5vw;
     list-style: none;
 
 }
@@ -69,6 +70,9 @@ header{
     color: white;
     text-decoration: none;
     font-family: 'DM Sans', sans-serif; 
+}
+.nav-link:hover{
+    text-decoration: underline;
 }
 .contact-us{
     text-decoration: underline;
@@ -122,7 +126,7 @@ h1{
     padding-top: 52px;
 }
 .inner-hero2{
-    padding: 0 100px 0 100px;
+    padding: 0 5vw;
     display: flex;
 }
 form{
@@ -154,29 +158,32 @@ form{
 .input-message{
     display: flex;
     width: 753px;
+  
+    color: #ffffff;
+    overflow: hidden;
+    resize: none;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start; 
    
 }
-#message{
+textarea{
     display: flex; 
-    width: 753px;
+    width: 752px;
     height: 162px;
-    line-height: 162px;
+    
     padding: 20.5px 24.995px;
-    align-items: flex-start;
+    /* align-items: flex-start; */
     border-radius: 14px;
     border: 1px solid var(--bg, #010725);
     background: var(--dark-blue, #010D50);
     color: #ffffff;
-    vertical-align: text-top;
+    overflow: hidden;
+    resize: none;
+    /* vertical-align: text-top; */
     
 }
-#message::placeholder{
-    transform: translateY(-50px);
-    vertical-align: text-top;
-}
+
 ::placeholder{
     color: white;
 }
@@ -215,7 +222,7 @@ form{
 
 
 .hero3{
-    padding: 120px 100px 120px 100px;
+    padding: 7vw 5vw;
 }
 .hero3-h1-div{
     text-align: center;
@@ -224,7 +231,7 @@ form{
 .question-div{
     display: flex;
     flex-direction: column;
-    padding: 0 200px 0 200px;
+    padding: 0 10vw 0 10vw;
 }
 /* .question-class{
     display: flex;
@@ -266,8 +273,8 @@ footer{
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
 .logo-social-div{
     display: flex;
@@ -406,7 +413,7 @@ footer{
 
 
 
-@media (max-width: 428px){
+@media (max-width: 35rem){
     header{
         display: none;
     }   
@@ -427,7 +434,7 @@ footer{
         display: flex;
         flex-direction: row;
         width: 100%;
-        padding: 0 16px;
+        padding: 0 5vw;
         justify-content: space-between;
     }
     .hamburger{
@@ -490,7 +497,7 @@ footer{
 
 
     .h1-div{
-        padding: 48px 16px 0 16px;
+        padding: 48px 5vw 0 5vw;
     }
     h1{
         font-size: 38px;
@@ -505,7 +512,7 @@ footer{
         padding-top: 40px;
     }
     .inner-hero2{
-        padding: 0 16px 0 16px;
+        padding: 0 5vw;
         display: flex;
         flex-direction: column;
     }
@@ -538,31 +545,27 @@ footer{
     }
     .input-message{
         display: flex;
-        width: 100%px;
-        flex-direction: column;
+        width: 100%;
+        /* flex-direction: column;
         justify-content: center;
-        align-items: flex-start; 
+        align-items: flex-start;  */
        
     }
-    #message{
-        display: flex;
-        
-        width:358px;
+    textarea{
+        display: flex; 
+        width:100%;
         height: 162px;
-        line-height: 162px;
+        /* line-height: 162px;
         padding: 20.5px 24.995px;
         align-items: flex-start;
         border-radius: 14px;
         border: 1px solid var(--bg, #010725);
         background: var(--dark-blue, #010D50);
         color: #ffffff;
-        vertical-align: text-top;
+        */
         
     }
-    #message::placeholder{
-        transform: translateY(-50px);
-        vertical-align: text-top;
-    }
+
     ::placeholder{
         color: white;
     }
@@ -598,7 +601,7 @@ footer{
 
 
     .hero3{
-        padding: 120px 16px 120px 16px;
+        padding: 120px 5vw 120px 5vw;
         
     }
     .hero3-h1-div{
@@ -612,21 +615,12 @@ footer{
     }
 
 
-
-
-
-
-
-
-
-
-
     .footer-every{
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 100%;       
-        padding: 0 16px 0 16px;
+        padding: 0 5vw;
     }
     .logo-social-div{
         display: flex;

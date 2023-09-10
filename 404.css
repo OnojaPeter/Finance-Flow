@@ -71,6 +71,9 @@ header{
     text-decoration: none;
     font-family: 'DM Sans', sans-serif; 
 }
+.nav-link:hover{
+    text-decoration: underline;
+}
 
 .download-button{
     background-color: #0328EE;

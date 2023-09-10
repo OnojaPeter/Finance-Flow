@@ -71,6 +71,9 @@ header{
     text-decoration: none;
     font-family: 'DM Sans', sans-serif; 
 }
+.nav-link:hover{
+    text-decoration: underline;
+}
 .blog-header{
     text-decoration: underline;
 }

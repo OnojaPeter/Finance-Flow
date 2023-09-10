@@ -7,7 +7,7 @@ body{
     background-color: #010725;
     color: #ffffff;
     margin: 0;
-    width: 100vw;
+    width: 100%;
     overflow-x: hidden;
     font-family: 'DM Sans', sans-serif; 
 }
@@ -16,13 +16,14 @@ header{
     height: 132px;
     justify-content: center;
     align-items: center;
+    /* width: 100vw; */
     color: #ffffff;
     font-family: 'DM Sans', sans-serif; 
-    padding: 33px 100px 33px 100px;
+    padding: 3vh 5vw 3vh 5vw;
 }
 .header-container{
     display: flex;
-    width: 100vw;
+    width: 100%;
     height: 66px; 
     justify-content: space-between;
 }
@@ -45,7 +46,7 @@ header{
 .nav-nav{
     display: flex; 
     height: 66px;
-    gap: 32px;
+    gap: 1.5vw;
 }
 .nav-navigation-div{
     display: flex;  
@@ -56,7 +57,7 @@ header{
     display: flex;
     height: 30px;
     padding: 7px 1px 7px 1px;
-    gap: 20px;
+    gap: 1.5vw;
     list-style: none;
 
 }
@@ -69,6 +70,9 @@ header{
     color: white;
     text-decoration: none;
     font-family: 'DM Sans', sans-serif; 
+}
+.nav-link:hover{
+    text-decoration: underline;
 }
 .tokens{
     text-decoration: underline;
@@ -143,7 +147,7 @@ p{
 }
 
 .table-container{
-    padding: 0 100px 120px 100px;
+    padding: 0 5vw 120px 5vw;
 }
 table{
     width: 100%;
@@ -219,8 +223,8 @@ footer{
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
 .logo-social-div{
     display: flex;
@@ -359,7 +363,7 @@ footer{
 
 
 
-@media (max-width: 428px){
+@media (max-width: 35rem){
     header{
         display: none;
     }   
@@ -380,7 +384,7 @@ footer{
         display: flex;
         flex-direction: row;
         width: 100%;
-        padding: 0 16px;
+        padding: 0 5vw;
         justify-content: space-between;
     }
     .hamburger{
@@ -444,7 +448,7 @@ footer{
         padding-bottom: 48px;
     }
     .inner-hero1{  
-        padding: 0 16px 0 16px;
+        padding: 0 5vw;
     }
     .inner-hero1-texts{
         display: flex;
@@ -483,7 +487,7 @@ footer{
         padding-bottom: 80px;
     }
     .table-mobile{
-        padding: 0 16px 0px 16px;
+        padding: 0 5vw;
     }
     .table-contents{
         border-bottom: 1px solid rgba(255, 255, 255, 0.10);
@@ -521,7 +525,7 @@ footer{
         flex-direction: column;
         align-items: center;
         width: 100%;       
-        padding: 0 16px 0 16px;
+        padding: 0 5vw;
     }
     .logo-social-div{
         display: flex;
