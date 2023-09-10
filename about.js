@@ -17,7 +17,6 @@ openMenu.addEventListener("click", () => {
     items.style.display = "none";
     closeMenu.style.display = "none";
     openMenu.style.display = "block";
-    } else {
-        
+    } else {    
     }
   });

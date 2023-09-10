@@ -546,24 +546,14 @@ footer{
     .input-message{
         display: flex;
         width: 100%;
-        /* flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;  */
+  
        
     }
     textarea{
         display: flex; 
         width:100%;
         height: 162px;
-        /* line-height: 162px;
-        padding: 20.5px 24.995px;
-        align-items: flex-start;
-        border-radius: 14px;
-        border: 1px solid var(--bg, #010725);
-        background: var(--dark-blue, #010D50);
-        color: #ffffff;
-        */
-        
+    
     }
 
     ::placeholder{

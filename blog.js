@@ -18,6 +18,6 @@ openMenu.addEventListener("click", () => {
     closeMenu.style.display = "none";
     openMenu.style.display = "block";
     } else {
-        
+       
     }
   });

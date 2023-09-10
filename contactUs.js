@@ -10,7 +10,6 @@ let arrayContent = document.querySelectorAll('.content')
 let arrayMinus = document.querySelectorAll('.minus') 
 
 
-
 let items = document.getElementById("menuItems");
 let openMenu = document.getElementById("open-menu");
 let closeMenu = document.getElementById("close-menu");

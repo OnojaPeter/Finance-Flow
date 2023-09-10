@@ -441,6 +441,7 @@ footer{
         background: #0328EE;  
         cursor: pointer;
     }   
+    
     .menu-items{
         display: none;
         flex-direction: column;

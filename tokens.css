@@ -11,6 +11,7 @@ body{
     overflow-x: hidden;
     font-family: 'DM Sans', sans-serif; 
 }
+
 header{
     display: flex;
     height: 132px;

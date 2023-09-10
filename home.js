@@ -12,6 +12,7 @@ openMenu.addEventListener("click", () => {
     }
   });
 
+  
   closeMenu.addEventListener("click", () => {
     if (items.style.display !="none"){
     items.style.display = "none";
