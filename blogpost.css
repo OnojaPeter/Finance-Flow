@@ -7,7 +7,7 @@ body{
     background-color: #010725;
     color: #ffffff;
     margin: 0;
-    width: 100vw;
+    width: 100%;
     overflow-x: hidden;
     font-family: 'DM Sans', sans-serif; 
 }
@@ -16,13 +16,14 @@ header{
     height: 132px;
     justify-content: center;
     align-items: center;
+    /* width: 100vw; */
     color: #ffffff;
     font-family: 'DM Sans', sans-serif; 
-    padding: 33px 100px 33px 100px;
+    padding: 3vh 5vw 3vh 5vw;
 }
 .header-container{
     display: flex;
-    width: 100vw;
+    width: 100%;
     height: 66px; 
     justify-content: space-between;
 }
@@ -45,7 +46,7 @@ header{
 .nav-nav{
     display: flex; 
     height: 66px;
-    gap: 32px;
+    gap: 1.5vw;
 }
 .nav-navigation-div{
     display: flex;  
@@ -56,7 +57,7 @@ header{
     display: flex;
     height: 30px;
     padding: 7px 1px 7px 1px;
-    gap: 20px;
+    gap: 1.5vw;
     list-style: none;
 
 }
@@ -117,7 +118,7 @@ header{
     padding-bottom: 126px;
 }
 .inner-hero1{
-    padding: 0 100px 0 100px;
+    padding: 0 5vw;
     display: flex;
     flex-direction: column;
     gap: 39px;
@@ -126,7 +127,7 @@ header{
     display: flex;
     flex-direction: column;
     gap: 40px;
-    padding: 0 100px 0 70px;
+    padding: 0 5vw 0 4vw;
 }
 .hero1-texts{
     display: inline-flex;
@@ -207,14 +208,14 @@ h3{
     gap: 4px;
     border-radius: 40px;
     background:  #010D50;
-    margin: 0 80px 0 80px;
+    margin: 0 5vw 0 5vw;
 }
 .blue-background-p p{
     font-size: 22px;
     font-style: normal;
     font-weight: 500;
     line-height: 172.7%;
-    padding: 0 130px 0 130px;
+    padding: 0 6vw;
 }
 
 
@@ -226,7 +227,7 @@ h3{
 }
 .inner-hero2{
     display: flex;
-    padding: 0 100px 0 100px;
+    padding: 0 5vw;
     align-items: center;
     height: 100%;
     justify-content: space-between;
@@ -287,6 +288,7 @@ form{
     line-height: 114.286%;
     letter-spacing: 1.6px;
     text-transform: uppercase;
+    cursor: pointer;
 }
 .mobile-form{
     display: none;
@@ -302,7 +304,7 @@ form{
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 0 100px 0 100px;
+    padding: 0 5vw;
     gap: 56px;
 }
 .hero3-header-div{
@@ -332,15 +334,16 @@ form{
 
 .entire-blogs{
     display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 26px;
+    /* flex-direction: column;
+    align-items: center; */
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
-.blog-post-div{
+/* .blog-post-div{
     display: flex;
     justify-content: space-between;
     width: 100%;
-}
+} */
 .blog-post{
     background-image: url(images/home-images/div.png);
     background-repeat: no-repeat no-repeat;
@@ -371,7 +374,7 @@ form{
     background-color: #010D50; 
     width: 382px;
     height: 590px;
-    border-radius: 40px;
+    border-radius: 40px; margin-bottom: 5vh;
 }
 .blog-post-product{
     display: flex;
@@ -440,8 +443,8 @@ footer{
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
 .logo-social-div{
     display: flex;
@@ -580,7 +583,7 @@ footer{
 
 
 
-@media (max-width: 428px){
+@media (max-width: 35rem){
     header{
         display: none;
     }   
@@ -601,7 +604,7 @@ footer{
         display: flex;
         flex-direction: row;
         width: 100%;
-        padding: 0 16px;
+        padding: 0 5vw;
         justify-content: space-between;
     }
     .hamburger{
@@ -672,7 +675,7 @@ footer{
         padding-bottom: 80px;
     }
     .inner-hero1{
-        padding: 0 16px 0 16px;
+        padding: 0 5vw;
         display: flex;
         flex-direction: column;
         gap: 76px;
@@ -759,7 +762,7 @@ footer{
         gap: 4px;
         border-radius: 40px;
         background:  #010D50;
-        margin: 0;
+        margin: 0 3vw 0 3vw;
     }
     .blue-background-p p{
         font-size: 16px;
@@ -779,7 +782,7 @@ footer{
     .inner-hero2{
         display: flex;
         flex-direction: column;
-        padding: 0 16px 0 16px;
+        padding: 0 5vw;
         align-items: center;
         height: 100%;
         gap: 20px;
@@ -841,6 +844,7 @@ footer{
     }
     #submit{
         display: flex;
+        cursor: pointer;
         width: 354px;
         padding: 27px 32px;
         justify-content: center;
@@ -868,7 +872,7 @@ footer{
         display: flex;
         flex-direction: column;
         width: 100%;
-        padding: 0 16px 0 16px;
+        padding: 0 5vw;
         gap: 24px;
     }
     .hero3-header-div{
@@ -1009,20 +1013,12 @@ footer{
     
     }
 
-
-
-
-
-
-
-
-
     .footer-every{
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 100%;       
-        padding: 0 16px 0 16px;
+        padding: 0 5vw;
     }
     .logo-social-div{
         display: flex;
