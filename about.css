@@ -7,13 +7,16 @@ body{
     background-color: #010725;
     color: #ffffff;
     margin: 0;
-    width: 100vw;
+    width: 100%;
     overflow-x: hidden;
     font-family: 'DM Sans', sans-serif; 
 }
 .planet-pic{
     position: absolute;
-    margin-left: 55%;
+    /* margin-left: 55%; */
+    display: flex;
+    width: 100%;
+    place-content: end;
     padding-top: 1150px;
 }
 .planet-mobile-pic{
@@ -24,13 +27,14 @@ header{
     height: 132px;
     justify-content: center;
     align-items: center;
+    /* width: 100vw; */
     color: #ffffff;
     font-family: 'DM Sans', sans-serif; 
-    padding: 33px 100px 33px 100px;
+    padding: 3vh 5vw 3vh 5vw;
 }
 .header-container{
     display: flex;
-    width: 100vw;
+    width: 100%;
     height: 66px; 
     justify-content: space-between;
 }
@@ -53,7 +57,7 @@ header{
 .nav-nav{
     display: flex; 
     height: 66px;
-    gap: 32px;
+    gap: 1.5vw;
 }
 .nav-navigation-div{
     display: flex;  
@@ -64,7 +68,7 @@ header{
     display: flex;
     height: 30px;
     padding: 7px 1px 7px 1px;
-    gap: 20px;
+    gap: 1.5vw;
     list-style: none;
 
 }
@@ -122,7 +126,7 @@ header{
     flex-direction: column;
     gap: 21px;
     width: 100%;
-    padding: 0 100px 0 100px;
+    padding: 0 5vw;
     text-align: center;
 }
 h1{
@@ -133,7 +137,7 @@ h1{
     letter-spacing: -1px;
 }
 .inner-hero1 p{
-    padding: 0 270px 0 270px;
+    padding: 0 10vw 0 10vw;
 }
 p{ 
     font-size: 18px;
@@ -152,7 +156,7 @@ p{
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 0 100px 0 100px;
+    padding: 0 5vw;
     gap: 32.98px;
 }
 .hero2-header-div{
@@ -239,7 +243,7 @@ h3{
     display: flex;
     flex-direction: column;
     gap: 78px;
-    padding: 0 655px 0 100px;
+    padding: 0 40% 0 5vw;
 }
 .mission-story-div{
     display: flex;
@@ -259,7 +263,7 @@ h3{
 }
 .inner-hero4{
     display: flex;
-    padding: 0 100px;
+    padding: 0 5vw;
 }
 .announcement-div{
     display: flex;
@@ -300,12 +304,12 @@ h3{
 .hero5-header{
     display: flex;
     justify-content: space-between;
-    padding: 0 100px 0 100px;
+    padding: 0 5vw;
     margin-bottom: 53px;
 }
 .blog-div{
     display: flex;
-    padding: 0 100px 0 100px;
+    padding: 0 5vw;
     width: 100%;
     justify-content: space-between;
     gap: 38px;
@@ -334,7 +338,7 @@ h3{
 .inner-hero6{
     display: flex;
     flex-direction: column;
-    padding: 0 100px 0 100px;
+    padding: 0 5vw;
     gap: 41px;
 }
 .hero6-text{
@@ -342,12 +346,13 @@ h3{
     flex-direction: column;
     text-align: center;
     gap: 16px;
-    padding: 0 350px 0 350px;
+    padding: 0 10vw 0 10vw;
 }
 .second-hero-companies{
     display: flex;
-    width: 100%;    
-    justify-content: space-between;
+   width: 100%;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
  }
 
 
@@ -359,8 +364,8 @@ footer{
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
 .logo-social-div{
     display: flex;
@@ -499,7 +504,7 @@ footer{
 
 
 
-@media (max-width:428px){
+@media (max-width:35rem){
     header{
         display: none;
     }   
@@ -520,7 +525,7 @@ footer{
         display: flex;
         flex-direction: row;
         width: 100%;
-        padding: 0 16px;
+        padding: 0 5vw;
         justify-content: space-between;
     }
     .hamburger{
@@ -583,7 +588,7 @@ footer{
         padding-top: 48px;
     }
     .inner-hero1{
-        padding: 0 16px;
+        padding: 0 5vw;
     }
     h1{
         font-size: 38px;
@@ -612,7 +617,7 @@ footer{
         padding-top: 48px;
     }
     .hero2-container{
-        padding: 0 16px;
+        padding: 0 5vw;
         display: flex;
         flex-direction: column;
         gap: 16px;
@@ -662,7 +667,7 @@ footer{
         padding-top: 44px;
     }
     .inner-hero3{
-        padding: 0 16px;
+        padding: 0 5vw;
     }
     .mission-story-div{
         padding-right: 28px;
@@ -673,7 +678,9 @@ footer{
         display: none;
     }
     .planet-mobile-pic{
-        display: block;
+        display: flex;
+        width: 100%;
+        place-content: end;
         padding-top: 64px;
     }
     .hero4{
@@ -683,7 +690,7 @@ footer{
         display: flex;
         flex-direction: column;
         gap: 40px;
-        padding: 0 16px;
+        padding: 0 5vw;
     }
     .timeline{
         display: flex;
@@ -728,13 +735,13 @@ footer{
         display: flex;
         flex-direction: column;
         margin-bottom: 16px;
-        padding: 0 16px;
+        padding: 0 5vw;
     }
     .blog-div{
         display: flex;
         flex-direction: column;
         gap: 16px;
-        padding: 0 16px;
+        padding: 0 5vw;
     }
     .blog{
         border-radius: 40px;
@@ -756,7 +763,7 @@ footer{
     .inner-hero6{
         display: flex;
         flex-direction: column;
-        padding: 0 16px;
+        padding: 0 5vw;
         gap: 41px;
     }
     .hero6-text{
@@ -764,14 +771,14 @@ footer{
         flex-direction: column;
         text-align: center;
         gap: 16px;
-        padding: 0 14px 0 14px;
+        padding: 0 5vw;
     }
     .second-hero-companies{
         display: flex;
         gap: 16px;
         justify-content: center;
         width: 100%;
-        padding: 0 16px;
+        padding: 0 5vw;
         flex-wrap: wrap;
         
     }
@@ -784,7 +791,7 @@ footer{
         flex-direction: column;
         align-items: center;
         width: 100%;       
-        padding: 0 16px 0 16px;
+        padding: 0 5vw;
     }
     .logo-social-div{
         display: flex;
